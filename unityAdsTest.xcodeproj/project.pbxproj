@@ -12,9 +12,12 @@
 		9382021A1FAF8CA300986D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938202181FAF8CA300986D22 /* Main.storyboard */; };
 		9382021C1FAF8CA300986D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9382021B1FAF8CA300986D22 /* Assets.xcassets */; };
 		9382021F1FAF8CA300986D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9382021D1FAF8CA300986D22 /* LaunchScreen.storyboard */; };
+		9CEA0317F1EC62F38ED227D2 /* Pods_unityAdsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67484EEDD00C4F1A9CA50210 /* Pods_unityAdsTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		527C29F195292A5A2E8EF9E5 /* Pods-unityAdsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unityAdsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-unityAdsTest/Pods-unityAdsTest.release.xcconfig"; sourceTree = "<group>"; };
+		67484EEDD00C4F1A9CA50210 /* Pods_unityAdsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unityAdsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		938202111FAF8CA300986D22 /* unityAdsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unityAdsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938202141FAF8CA300986D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		938202161FAF8CA300986D22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		9382021B1FAF8CA300986D22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9382021E1FAF8CA300986D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		938202201FAF8CA300986D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8E8FC69EC288DD99DFEF4A /* Pods-unityAdsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unityAdsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unityAdsTest/Pods-unityAdsTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CEA0317F1EC62F38ED227D2 /* Pods_unityAdsTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B5ABEC854A560326D895FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67484EEDD00C4F1A9CA50210 /* Pods_unityAdsTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B872BBDA2318C0075B7BAB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E8E8FC69EC288DD99DFEF4A /* Pods-unityAdsTest.debug.xcconfig */,
+				527C29F195292A5A2E8EF9E5 /* Pods-unityAdsTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		938202081FAF8CA300986D22 = {
 			isa = PBXGroup;
 			children = (
 				938202131FAF8CA300986D22 /* unityAdsTest */,
 				938202121FAF8CA300986D22 /* Products */,
+				5B872BBDA2318C0075B7BAB6 /* Pods */,
+				01B5ABEC854A560326D895FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 938202231FAF8CA300986D22 /* Build configuration list for PBXNativeTarget "unityAdsTest" */;
 			buildPhases = (
+				A086FA8ACAD5005EE62A8C9A /* [CP] Check Pods Manifest.lock */,
 				9382020D1FAF8CA300986D22 /* Sources */,
 				9382020E1FAF8CA300986D22 /* Frameworks */,
 				9382020F1FAF8CA300986D22 /* Resources */,
+				42DD2B0085FD6154F0B437AE /* [CP] Embed Pods Frameworks */,
+				C036533365B4BC92A0AD3C7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42DD2B0085FD6154F0B437AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unityAdsTest/Pods-unityAdsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A086FA8ACAD5005EE62A8C9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-unityAdsTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C036533365B4BC92A0AD3C7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unityAdsTest/Pods-unityAdsTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9382020D1FAF8CA300986D22 /* Sources */ = {
@@ -272,6 +350,7 @@
 		};
 		938202241FAF8CA300986D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8E8FC69EC288DD99DFEF4A /* Pods-unityAdsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +366,7 @@
 		};
 		938202251FAF8CA300986D22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527C29F195292A5A2E8EF9E5 /* Pods-unityAdsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
